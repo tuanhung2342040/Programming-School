@@ -1,0 +1,61 @@
+import java.util.ArrayList;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        School sch = new School("Win",11223,"27SStreet");
+
+
+
+
+        Student s = new Student("Hung", "Nguyen",11);
+        Student s1 = new Student("Khanh", "Nguyen",10);
+        Student s2 = new Student("Hoang", "Nguyen",11);
+        Student s3 = new Student("Jackie", "Huang",11);
+        Student s4 = new Student("John", "Ng",10);
+        Student s5 = new Student("Jessica", "Tran",11);
+        Student s6 = new Student("Thi", "Vu",11);
+        Student s7 = new Student("Adi", "Hoang",10);
+        Student s8 = new Student("Alan", "Luong",11);
+        ArrayList<Student>studentList= new ArrayList<>();
+        studentList.add(s);
+        studentList.add(s1);
+        studentList.add(s2);
+        studentList.add(s3);
+        studentList.add(s4);
+        studentList.add(s5);
+        studentList.add(s6);
+        studentList.add(s7);
+        studentList.add(s8);
+        System.out.println(studentList);
+        studentList.remove(s8);
+        studentList.remove(s2);
+        System.out.println(studentList);
+
+        Teacher t = new Teacher("Ma", "Huynh", "Art");
+        Teacher t1 = new Teacher("Lizzy", "Wung", "Math");
+        Teacher t2= new Teacher("Kelvin", "Guang", "Music");
+        ArrayList<Teacher>teacherList = new ArrayList<>();
+        teacherList.add(t);
+        teacherList.add(t2);
+        teacherList.add(t1);
+        System.out.println(teacherList);
+        teacherList.remove(t1);
+        System.out.println(teacherList);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
